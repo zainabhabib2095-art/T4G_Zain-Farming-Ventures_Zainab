@@ -1,0 +1,225 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f5fff5;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:white;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:bold;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:black;
+}
+
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px;
+flex-wrap:wrap;
+}
+
+.hero-text h1{
+font-size:45px;
+line-height:1.2;
+}
+
+.green{
+color:#1fa63f;
+}
+
+.btn{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:#33cc66;
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+.hero-image img{
+width:300px;
+}
+
+
+/* STATS */
+
+.stats{
+display:flex;
+justify-content:space-around;
+background:#0c6b1b;
+color:white;
+padding:30px;
+flex-wrap:wrap;
+}
+
+.stat{
+text-align:center;
+}
+
+
+/* SERVICES */
+
+.services{
+padding:60px;
+text-align:center;
+background:#c8f5c8;
+}
+
+.service-desc{
+margin:15px 0 40px 0;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+}
+
+.card a{
+text-decoration:none;
+color:green;
+}
+
+
+/* CONTACT */
+
+.contact{
+padding:60px;
+background:#0c6b1b;
+color:white;
+text-align:center;
+}
+
+.contact-container{
+display:flex;
+gap:40px;
+margin-top:40px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+width:300px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+.contact-form button{
+padding:10px;
+background:#444;
+color:white;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
+.contact-info{
+width:300px;
+text-align:left;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#063d10;
+color:white;
+padding:40px;
+}
+
+.footer-container{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:30px;
+}
+
+footer ul{
+list-style:none;
+}
+
+footer li{
+margin-top:8px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:900px){
+}
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.service-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.stats{
+gap:20px;
+}
+
+
+
+@media (max-width:600px){
+}
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.hero-text h1{
+font-size:32px;
+}
+
