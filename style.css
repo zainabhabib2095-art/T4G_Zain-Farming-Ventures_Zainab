@@ -222,4 +222,89 @@ grid-template-columns:1fr;
 .hero-text h1{
 font-size:32px;
 }
+/* NAVBAR STYLE FIX */
 
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:#f8f8f8;
+border-bottom:2px solid #ddd;
+position:relative;
+}
+
+/* LOGO */
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:40px;
+}
+
+.logo span{
+font-size:20px;
+font-weight:500;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links li a{
+text-decoration:none;
+color:#333;
+font-size:16px;
+transition:0.3s;
+}
+
+.nav-links li a:hover{
+color:#1fa63f;
+}
+
+/* MOBILE MENU */
+
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+
+/* RESPONSIVE NAVBAR */
+
+@media (max-width:768px){
+
+.navbar{
+padding:15px 20px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+right:20px;
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.nav-links.active{
+display:flex;
+}
+
+}
